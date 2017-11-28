@@ -35,6 +35,7 @@ def main():
 
     turtle1()
     turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -113,6 +114,17 @@ def turtle4():
     Katie.left(45)
     Katie.backward(60)
 
+
+def turtle5():
+
+
+    Coleman = rg.SimpleTurtle('circle')
+    Weaver = rg.SimpleTurtle('triangle')
+    Coleman.pen = rg.Pen('red', 13)
+    Weaver.pen = rg.Pen('brown', 1)
+    Coleman.right(180)
+    Coleman.forward(300)
+    Weaver.draw_circle(50)
 
 ########################################################################
 #
