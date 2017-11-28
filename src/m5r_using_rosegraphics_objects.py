@@ -17,7 +17,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              the middle
+#              the top left of the screen
 #
 #        -- In what direction on the screen does the positive X-axis point?
 #              to the right
