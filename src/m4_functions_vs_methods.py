@@ -76,6 +76,7 @@ def main():
     #   Second number: bigger means slower.
     window.tracer(1, 1)
 
+    try_methods_and_functions()
     try_functions()
     try_methods()
     jump_and_move_turtle(100, 50, 200, -100)
@@ -246,8 +247,33 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+
+    Colin = rg.SimpleTurtle('square')
+    Colin.pen = rg.Pen('blue', 5)
+
+    Colin.backward(150)
+    Colin.speed = 1
+
+    draw_many_squares(Colin, 2, 100, 30)
+
+    Colin.speed = 5
+    Colin.pen.color = 'red'
+
+    draw_many_squares(Colin, 10, 50, 15)
+
+    Colin.speed = 100
+    Colin.pen.thickness = 35
+
+    draw_many_squares(Colin, 8, 300, 60)
+
+    Colin.pen = rg.Pen('black', 3)
+
+    Colin.backward(200)
+    Colin.draw_circle(30)
+    Colin.draw_square(50)
+
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
