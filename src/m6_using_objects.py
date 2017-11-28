@@ -15,6 +15,7 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     two_circles()
+    circle_and_rectangle()
 
 
 def two_circles():
@@ -89,8 +90,37 @@ def circle_and_rectangle():
 
     window = rg.RoseWindow(800, 800)
 
+    center_point = rg.Point(400, 400)
+    radius = 50
+    circle = rg.Circle(center_point, radius)
+    circle.fill_color = 'blue'
+    circle.attach_to(window)
+
+    corner1 = rg.Point(700, 700)
+    corner2 = rg.Point(100, 600)
+    rectangle = rg.Rectangle(corner1, corner2)
+    rcenter = rectangle.get_center()
+    rectangle.attach_to(window)
+
+
+    print(circle.outline_thickness)
+    print(circle.fill_color)
+    print(center_point)
+    print(center_point.x)
+    print(center_point.y)
+    print(rectangle.outline_thickness)
+    print(rectangle.fill_color)
+    print(rcenter)
+    print(rcenter.x)
+    print(rcenter.y)
+
+
+    window.render()
+    window.close_on_mouse_click()
+
+
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
