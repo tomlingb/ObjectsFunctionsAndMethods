@@ -37,6 +37,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle4()
 
     window.close_on_mouse_click()
 
@@ -103,6 +104,16 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+
+
+    Katie = rg.SimpleTurtle('square')
+    Katie.pen = rg.Pen('purple', 3)
+    Katie.forward(100)
+    Katie.left(45)
+    Katie.backward(60)
+
+
 ########################################################################
 #
 # DONE: 2.
@@ -137,7 +148,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
