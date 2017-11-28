@@ -76,6 +76,7 @@ def main():
     #   Second number: bigger means slower.
     window.tracer(1, 1)
 
+    try_methods()
     jump_and_move_turtle(100, 50, 200, -100)
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
@@ -171,8 +172,16 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+
+    Zach = rg.SimpleTurtle('turtle')
+    Zach.pen = rg.Pen('brown', 5)
+    Zach.forward(150)
+    Zach.left(90)
+    Zach.forward(50)
+    Zach.backward(100)
+
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
