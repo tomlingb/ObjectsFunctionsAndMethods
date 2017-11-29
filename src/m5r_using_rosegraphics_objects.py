@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -23,7 +23,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #              to the right
 #
 #        -- In what direction on the screen does the positive Y-axis point?
-#              upward
+#              downward
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
 #            window = rg.RoseWindow()
@@ -79,6 +79,7 @@ def main():
     example1()
     example2()
     example3()
+    test()
 
 
 def example1():
@@ -163,6 +164,16 @@ def example3():
     # ------------------------------------------------------------------
     window.close_on_mouse_click()
 
+def test():
+
+
+    window = rg.RoseWindow()
+    point1 = rg.Point(50, 50)
+    point1.outline_thickness = 3
+    point1.attach_to(window)
+
+    window.render()
+    window.close_on_mouse_click()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
